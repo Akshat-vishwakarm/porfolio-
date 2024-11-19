@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ohpdfi.tailwind.config.css">
+    <title>Document</title>
+    <style>
+        
+        *{  
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #f7f703;
+            background-image:
+            repeating-linear-gradient(
+                to right, transparent 0 100px,
+                #25283b22 100px 101px
+            ),
+            repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                #25283b22 100px 101px
+            );
+        }
+        
+        body::before{
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            background-image: url(images/bg.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <div class="banner">
+        <div class="slider" style="--quantity: 10">
+            <div class="item" style="--position: 1"><img src="html logo.jpg"></div>
+            <div class="item" style="--position: 2"><img src="css logo.jpg" alt=""></div>
+            <div class="item" style="--position: 3"><img src="2d animation.jpg" alt=""></div>
+            <div class="item" style="--position: 4"><img src="photo shop.jpg" alt=""></div>
+            <div class="item" style="--position: 5"><img src="py logo.jpg" alt=""></div>
+            <div class="item" style="--position: 6"><img src="THINK.png" alt=""></div>
+            <div class="item" style="--position: 7"><img src="Screenshot 2024-11-04 222230.png" alt=""></div>
+            <div class="item" style="--position: 8"><img src="video.jpg" alt=""></div>
+            <div class="item" style="--position: 9"><img src="figma-acquired-by-adobe-adbe_feature.jpg" alt=""></div>
+            <div class="item" style="--position: 10"><img src="flutterflow.webp" alt=""></div>
+        </div>
+        
+         <img src="model.png-removebg-preview.png" class="bottom-center-image">
+        <div class="content">
+            
+            <div class="author">
+               
+            </div>
+            <div class="model"></div>
+        </div>
+    </div>
+    <a href="aboutme.html">
+    <button1 class="btn">ABOUT ME!</button1>
+    </a>
+    <a href="https://www.linkedin.com/in/akshat-pankaj-vishwakarma-8a4246327/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B9JDhdgzBTwqeOgjGe4MTJQ%3D%3D">
+    <button2 class="btnI">LINKEDIN PROFIL</button2>
+    </a>
+    <a href="https://www.bing.com/ck/a?!&&p=db4b49f7cfaa6396af4df3d7945048e7903fd6c381d1b339b8ccf20a553940ecJmltdHM9MTczMDY3ODQwMA&ptn=3&ver=2&hsh=4&fclid=1dfc70ce-c9d8-6932-3ee2-65d8c84368ae&psq=https%3a%2f%2fgithub.com%2fAkshat-vishwakarm&u=a1aHR0cHM6Ly9naXRodWIuY29tL0Frc2hhdC12aXNod2FrYXJtLw&ntb=1">
+    <button3 class="btn2">GIT HUB</button3>
+    </a>
+    <a href="https://www.bing.com/ck/a?!&&p=3c51775d44333c0223b4388e013e80339ace2c849c5404420a0a7bd9745dcf9bJmltdHM9MTczMDY3ODQwMA&ptn=3&ver=2&hsh=4&fclid=1dfc70ce-c9d8-6932-3ee2-65d8c84368ae&psq=https%3a%2f%2fwww.instagram.com%2fakshat_6.626%2f%23&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9ha3NoYXRfNi42MjYv&ntb=1">
+    <button4 class="btn3">INSTRAGRAM</button4>
+    </a>
+    
+</body>
+</html>

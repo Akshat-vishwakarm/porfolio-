@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:5500/resume.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./PROJ_files/ohpdfi.tailwind.config.css">
+    <title>Document</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #e2f703;
+            background-image:
+            repeating-linear-gradient(
+                to right, transparent 0 100px,
+                #25283b22 100px 101px
+            ),
+            repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                #25283b22 100px 101px
+            );
+        }
+        
+        body::before{
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            background-image: url(images/bg.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+    </style>
+    <link rel="stylesheet" href="./PROJ_files/style.css">
+</head>
+<body>
+  
+    <div class="banner">
+        <div class="slider" style="--quantity: 10">
+            <div class="item" style="--position: 1"><img src="./PROJ_files/html logo.jpg"></div>
+            <div class="item" style="--position: 2"><img src="./PROJ_files/css logo.jpg" alt=""></div>
+            <div class="item" style="--position: 3"><img src="./PROJ_files/2d animation.jpg" alt=""></div>
+            <div class="item" style="--position: 4"><img src="./PROJ_files/photo shop.jpg" alt=""></div>
+            <div class="item" style="--position: 5"><img src="./PROJ_files/py logo.jpg" alt=""></div>
+            <div class="item" style="--position: 6"><img src="./PROJ_files/THINK.png" alt=""></div>
+            <div class="item" style="--position: 7"><img src="./PROJ_files/Screenshot 2024-11-04 222230.png" alt=""></div>
+            <div class="item" style="--position: 8"><img src="./PROJ_files/video.jpg" alt=""></div>
+            <div class="item" style="--position: 9"><img src="./PROJ_files/figma-acquired-by-adobe-adbe_feature.jpg" alt=""></div>
+            <div class="item" style="--position: 10"><img src="./PROJ_files/flutterflow.webp" alt=""></div>
+        </div>
+        
+         <img src="./PROJ_files/model.png-removebg-preview.png" class="bottom-center-image">
+        <div class="content">
+            
+            <div class="author">
+               
+            </div>
+            <div class="model"></div>
+        </div>
+    </div>
+    <a href="http://127.0.0.1:5500/aboutme.html">
+    <button1 class="btn">ABOUT ME!</button1>
+    </a>
+    <a href="https://www.linkedin.com/in/akshat-pankaj-vishwakarma-8a4246327/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B9JDhdgzBTwqeOgjGe4MTJQ%3D%3D">
+    <button2 class="btnI">LINKEDIN PROFIL</button2>
+    </a>
+    <a href="https://www.bing.com/ck/a?!&amp;&amp;p=db4b49f7cfaa6396af4df3d7945048e7903fd6c381d1b339b8ccf20a553940ecJmltdHM9MTczMDY3ODQwMA&amp;ptn=3&amp;ver=2&amp;hsh=4&amp;fclid=1dfc70ce-c9d8-6932-3ee2-65d8c84368ae&amp;psq=https%3a%2f%2fgithub.com%2fAkshat-vishwakarm&amp;u=a1aHR0cHM6Ly9naXRodWIuY29tL0Frc2hhdC12aXNod2FrYXJtLw&amp;ntb=1">
+    <button3 class="btn2">GIT HUB</button3>
+    </a>
+    <a href="https://www.bing.com/ck/a?!&amp;&amp;p=3c51775d44333c0223b4388e013e80339ace2c849c5404420a0a7bd9745dcf9bJmltdHM9MTczMDY3ODQwMA&amp;ptn=3&amp;ver=2&amp;hsh=4&amp;fclid=1dfc70ce-c9d8-6932-3ee2-65d8c84368ae&amp;psq=https%3a%2f%2fwww.instagram.com%2fakshat_6.626%2f%23&amp;u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9ha3NoYXRfNi42MjYv&amp;ntb=1">
+    <button4 class="btn3">INSTRAGRAM</button4>
+    </a>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

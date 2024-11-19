@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do You Love Me?</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        #yes-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        #yes-btn:hover {
+            background-color: #45a049;
+        }
+
+        #no-btn {
+            background-color: #f44336;
+            color: white;
+            position: relative;
+        }
+
+        #no-btn:hover {
+            position: absolute;
+            top: calc(10% + 80vh * var(--y));
+            left: calc(10% + 80vw * var(--x));
+            background-color: #e53935;
+        }
+    </style>
+</head>
+<body>
+    <h1>Do you love me?</h1>
+    <div class="button-container">
+        <button id="yes-btn" class="btn" onclick="sayLove()">Yes</button>
+        <button id="no-btn" class="btn" onmouseover="moveNo()">No</button>
+    </div>
+
+    <script>
+        // Function to move the "No" button to a random position
+        function moveNo() {
+            let x = Math.random();
+            let y = Math.random();
+            document.documentElement.style.setProperty('--x', x);
+            document.documentElement.style.setProperty('--y', y);
+        }
+
+        // Function to redirect to a new page
+        function sayLove() {
+            const newPage = window.open('', '_blank');
+            newPage.document.write(`
+                <html>
+                    <head><title>Love You Too</title></head>
+                    <body style="display:flex; align-items:center; justify-content:center; height:100vh; font-size:2rem; background-color: #ffe4e1; color:#d32f2f;">
+                        <h1>Love you too!</h1>
+                    </body>
+                </html>
+            `);
+        }
+    </script>
+</body>
+</html>
